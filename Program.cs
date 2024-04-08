@@ -58,7 +58,7 @@ namespace Binary_Calculator
             while (!isBinary)
             {
                 input = Console.ReadLine();
-                binaryNum = Regex.Replace(input, @"^\s*0+", "");
+                binaryNum = Regex.Replace(input, @"\s+", "");
 
                 foreach (char character in binaryNum)
                 {
